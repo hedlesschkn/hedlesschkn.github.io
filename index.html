@@ -1,7 +1,79 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <title>GetPIDs.com</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <div class = "navbar-nav">
+          <a class="nav-item nav-link navbar-brand" id="home" href="/">
+            <img src="https://github.com/hedlesschkn/hedlesschkn.github.io/blob/main/GP-Logo.jpg?raw=true" width="30" height="30" class="d-inline-block align-top" alt="">
+            GetPIDs
+          </a>
+        </div>
+      </div>
+    </nav>
+
+
+	<div class="container">
+		<h1 align="center">Welcome to GetPIDs.com</h1>
+		<h5> A PID story</h5>
+		<p> Your friend spent hours getting their quad amazingly locked in.  The thing flies like it's on rails, it feels like a totally different vehicle!  So you say, "Hey man, let me get your pids!".  Your buddy gladly hands over the settings, you plug them in to BetaFlight configurator and go out for a test flight with a smile ear to ear.  Flick on that arm switch and go for your first flip and... Woah, what is this overshoot and wobble? The motors are burning hot and sound like they are screeching. Your quad flies like crap...  This might even feel worse than defaults!  How can one quad fly great and another like trash using the same numbers? What gives?!</p>
+
+		<p> P, I, and D gains are set based on YOUR specific system.  These are the numbers that tell your flight controller how hard your motors can push, how much momentum your vehicle carries, when to slow rotations down so you don't overshoot, how long it takes your motors to get up to speed, and more. They aren't magic numbers that define how any old system will fly, they are custom tuned to match your specific configuration of hardware.  If you use PIDs that were tuned for someone else's quad, you're basically lying to your flight controller and telling it it's attached to a quad with the same setup as that other vehicle.  The hardware doesn't perform exactly the same, and you told it to expect that it should, no wonder it flies so weird!  If your freind's motors have more or less torque than yours, that's a different system.  Is the frame shape different? That's a different system. Does the weight of any of the components vary from their's? You guessed it, totally different system.  What you need is a custom tune for YOUR hardware, and you've come to the right place.</p>
+		
+		</br>
+		<h5> What is GetPIDs?</h5>
+		<p>GetPids is an automatic pid tuning website that is currently under construction.  It will have provisions for vehicles with and without BlackBox logging.<p>
+		<p>No more fiddling with numbers, just tell the site some info about your quad and your flying style, and get a custom tune optimized just for you and your vehicle.<p>
+		
+		</br>
+		<h5>Keep me up to date!</h5>
+		<p>GetPIDs is still under construction.  We're working hard to test lots of different vechicle configurations and working with some of the top pilots in the world to make sure we can provide you with the best tune possible with the least ammount of headache.  If you're interested in knowing when the product is live or want first dibs on beat testing opportunities, sign up with your email below.  (I hate spam just as much or more than the next guy and will NOT ever sell your information or send you needless spammy emails.)<p>
+		<p>- Name<p>
+		<p>- Pilot Handle<p>
+		<p>- email address<p>
+		<p>- do you have blackbox logging capabilities?<p>
+		<p>[Submit]<p>
+	</div>
+	
+	
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+    crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
 </html>
