@@ -52,14 +52,83 @@
 		
 		</br>
 		<h5>Keep me up to date!</h5>
-		<p>GetPIDs is still under construction.  We're working hard to test lots of different vechicle configurations and working with some of the top pilots and PID tuners in the world to make sure we can provide you with the best tune possible with the least ammount of headache.  If you're interested in knowing when the product is live or want first dibs on beta testing opportunities, sign up with your email below.  (I hate spam just as much or more than the next guy and will NEVER sell your information or send you needless spammy emails.)<p>
-		<p>- Name<p>
-		<p>- Pilot Handle<p>
-		<p>- email address<p>
-		<p>- do you have blackbox logging capabilities?<p>
-		<p>- do you do more racing or freestyle?<p>
-		<p>[Submit]<p>
+		<p>GetPIDs is still under construction.  We're working hard to test lots of different vechicle configurations and working with some of the top pilots and PID tuners in the world to make sure we can provide you with the best tune possible with the least ammount of headache.  If you're interested in knowing when the product is live or want first dibs on beta testing opportunities, sign up with your email below.<p>
+		</br>
+		
+		<form name="gform" id="gform" action="https://docs.google.com/forms/d/e/1FAIpQLSe3ux-bu5w7ftT7_LpiuNi302QN-tktJ1UN3vDe6tRv6bVodA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+		  <h3 align="center">Notification Form</h3>
+		  <div class="form-group">
+			<label for="email">Name</label>
+			<input
+			  type="text"
+			  class="form-control"
+			  id="entry.1353767168"
+			  name="entry.1353767168"
+			  placeholder="Enter Name"
+			/>
+		  </div>
+		  <div class="form-group">
+			<label for="email">Pilot Handle</label>
+			<input
+			  type="text"
+			  class="form-control"
+			  id="entry.2072984209"
+			  name="entry.2072984209"
+			  placeholder="Enter Handle"
+			/>
+		  </div>
+		  <div class="form-group">
+			<label for="exampleInputEmail1">Email address</label>
+			<input 
+				type="email" 
+				class="form-control" 
+				id="entry.363455283"
+				name="entry.363455283"				
+				aria-describedby="emailHelp" 
+				placeholder="Enter email">
+			<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+		  </div>
+		  <div class="form-group">
+			<label for="exampleFormControlSelect1">What is your primary Firmware?</label>
+			<select class="form-control" id="entry.1703157640" name="entry.1703157640">
+			  <option>Betaflight 4.2 or newer</option>
+			  <option>older Betaflight</option>
+			  <option>iNav</option>
+			  <option>KISS</option>
+			  <option>emuFlight</option>
+			  <option>FlightOne</option>
+			  <option>Other</option>
+			</select>
+		  </div>
+		  <div class="form-group">
+			<label for="exampleFormControlSelect1">Do you have BlackBox logging capabilities?</label>
+			<select class="form-control" id="entry.146038521" name="entry.146038521">
+			  <option>Yes, my FC does BlackBox logging</option>
+			  <option>No, my FC does not BlackBox log</option>
+			</select>
+			<small id="loggingHelp" class="form-text text-muted">If you have multiple vehicles, do some/most of your vehicles have logging capabilities?</small>
+		  </div>
+		  <div class="form-group">
+			<label for="exampleFormControlSelect1">What is your prefered type of flying?</label>
+			<select class="form-control" id="entry.1346260437" name="entry.1346260437">
+			  <option>Racing</option>
+			  <option>Freestyle</option>
+			  <option>Cinematic</option>
+			  <option>Multiple of the above</option>
+			</select>
+		  </div>
+		  <div class="form-group">
+			<label for="exampleFormControlTextarea1">Additional Comments</label>
+			<textarea class="form-control" id="entry.2114151822" name="entry.2114151822" rows="3"></textarea>
+		  </div>
+		  <br />
+		   
+		  <button type="submit" class="btn btn-primary" >Submit</button>
+		</form>
+		<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 	</div>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 	
 	
     <script src="https://code.jquery.com/jquery-3.6.0.js" 
@@ -76,6 +145,14 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript">var submitted=false;</script>
+	<script type="text/javascript">
+		$('#gform').on('submit', function(e) {
+		  $('#gform *').fadeOut(2000);
+		  $('#gform').prepend('Thank you for your submission!');
+		  });
+	</script>
 
   </body>
 </html>
